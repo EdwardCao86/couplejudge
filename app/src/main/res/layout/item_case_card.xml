@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp">
+
+    <LinearLayout
+        android:id="@+id/layoutDeleteBackground"
+        android:layout_width="96dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/pink_secondary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/Widget.CatCoupleJudge.Button.Secondary"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="删除" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutForeground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvMeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/pink_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="3"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivChevron"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="详情"
+            android:src="@drawable/ic_chevron_right" />
+    </LinearLayout>
+</FrameLayout>
